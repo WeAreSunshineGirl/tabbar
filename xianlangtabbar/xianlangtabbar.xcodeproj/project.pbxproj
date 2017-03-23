@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEFB448A1E83757A00A0B13E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFB44891E83757A00A0B13E /* AppDelegate.swift */; };
+		CEFB44911E83757A00A0B13E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFB44901E83757A00A0B13E /* Assets.xcassets */; };
+		CEFB44941E83757A00A0B13E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFB44921E83757A00A0B13E /* LaunchScreen.storyboard */; };
+		CEFB449C1E8375F500A0B13E /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFB449B1E8375F500A0B13E /* MainTabViewController.swift */; };
+		CEFB449E1E83777A00A0B13E /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFB449D1E83777A00A0B13E /* NavViewController.swift */; };
+		CEFB44A01E83786E00A0B13E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFB449F1E83786E00A0B13E /* BaseViewController.swift */; };
+		CEFB44BF1E83791D00A0B13E /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFB44A81E83791D00A0B13E /* NSArray+Log.m */; };
+		CEFB44C01E83791D00A0B13E /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFB44AA1E83791D00A0B13E /* NSAttributedString+CZAdditon.m */; };
+		CEFB44C11E83791D00A0B13E /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFB44AC1E83791D00A0B13E /* NSObject+CZRuntime.m */; };
+		CEFB44C21E83791D00A0B13E /* NSString+CZBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFB44AE1E83791D00A0B13E /* NSString+CZBase64.m */; };
+		CEFB44C31E83791D00A0B13E /* NSString+CZHash.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFB44B01E83791D00A0B13E /* NSString+CZHash.m */; };
+		CEFB44C41E83791D00A0B13E /* NSString+CZPath.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFB44B21E83791D00A0B13E /* NSString+CZPath.m */; };
+		CEFB44C51E83791D00A0B13E /* UIButton+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFB44B41E83791D00A0B13E /* UIButton+CZAddition.m */; };
+		CEFB44C61E83791D00A0B13E /* UIColor+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFB44B61E83791D00A0B13E /* UIColor+CZAddition.m */; };
+		CEFB44C71E83791D00A0B13E /* UILabel+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFB44B81E83791D00A0B13E /* UILabel+CZAddition.m */; };
+		CEFB44C81E83791D00A0B13E /* UIScreen+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFB44BA1E83791D00A0B13E /* UIScreen+CZAddition.m */; };
+		CEFB44C91E83791D00A0B13E /* UIView+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFB44BC1E83791D00A0B13E /* UIView+CZAddition.m */; };
+		CEFB44CA1E83791D00A0B13E /* UIViewController+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFB44BE1E83791D00A0B13E /* UIViewController+CZAddition.m */; };
+		CEFB44CE1E83798500A0B13E /* NSBundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFB44CC1E83798500A0B13E /* NSBundle+Extensions.swift */; };
+		CEFB44CF1E83798500A0B13E /* UIBarButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFB44CD1E83798500A0B13E /* UIBarButton+Extensions.swift */; };
+		CEFB44D11E83823600A0B13E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFB44D01E83823600A0B13E /* HomeViewController.swift */; };
+		CEFB44D31E83826700A0B13E /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFB44D21E83826700A0B13E /* MessageViewController.swift */; };
+		CEFB44D51E83827600A0B13E /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFB44D41E83827600A0B13E /* DiscoverViewController.swift */; };
+		CEFB44D71E83828E00A0B13E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFB44D61E83828E00A0B13E /* ProfileViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CEFB44861E83757900A0B13E /* xianlangtabbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xianlangtabbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEFB44891E83757A00A0B13E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEFB44901E83757A00A0B13E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEFB44931E83757A00A0B13E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEFB44951E83757A00A0B13E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEFB449B1E8375F500A0B13E /* MainTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
+		CEFB449D1E83777A00A0B13E /* NavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
+		CEFB449F1E83786E00A0B13E /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CEFB44A11E8378F400A0B13E /* xianlangtabbar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "xianlangtabbar-Bridging-Header.h"; sourceTree = "<group>"; };
+		CEFB44A61E83791D00A0B13E /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
+		CEFB44A71E83791D00A0B13E /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		CEFB44A81E83791D00A0B13E /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		CEFB44A91E83791D00A0B13E /* NSAttributedString+CZAdditon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+CZAdditon.h"; sourceTree = "<group>"; };
+		CEFB44AA1E83791D00A0B13E /* NSAttributedString+CZAdditon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+CZAdditon.m"; sourceTree = "<group>"; };
+		CEFB44AB1E83791D00A0B13E /* NSObject+CZRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CZRuntime.h"; sourceTree = "<group>"; };
+		CEFB44AC1E83791D00A0B13E /* NSObject+CZRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CZRuntime.m"; sourceTree = "<group>"; };
+		CEFB44AD1E83791D00A0B13E /* NSString+CZBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZBase64.h"; sourceTree = "<group>"; };
+		CEFB44AE1E83791D00A0B13E /* NSString+CZBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZBase64.m"; sourceTree = "<group>"; };
+		CEFB44AF1E83791D00A0B13E /* NSString+CZHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZHash.h"; sourceTree = "<group>"; };
+		CEFB44B01E83791D00A0B13E /* NSString+CZHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZHash.m"; sourceTree = "<group>"; };
+		CEFB44B11E83791D00A0B13E /* NSString+CZPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZPath.h"; sourceTree = "<group>"; };
+		CEFB44B21E83791D00A0B13E /* NSString+CZPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZPath.m"; sourceTree = "<group>"; };
+		CEFB44B31E83791D00A0B13E /* UIButton+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CZAddition.h"; sourceTree = "<group>"; };
+		CEFB44B41E83791D00A0B13E /* UIButton+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CZAddition.m"; sourceTree = "<group>"; };
+		CEFB44B51E83791D00A0B13E /* UIColor+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CZAddition.h"; sourceTree = "<group>"; };
+		CEFB44B61E83791D00A0B13E /* UIColor+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CZAddition.m"; sourceTree = "<group>"; };
+		CEFB44B71E83791D00A0B13E /* UILabel+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CZAddition.h"; sourceTree = "<group>"; };
+		CEFB44B81E83791D00A0B13E /* UILabel+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CZAddition.m"; sourceTree = "<group>"; };
+		CEFB44B91E83791D00A0B13E /* UIScreen+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+CZAddition.h"; sourceTree = "<group>"; };
+		CEFB44BA1E83791D00A0B13E /* UIScreen+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+CZAddition.m"; sourceTree = "<group>"; };
+		CEFB44BB1E83791D00A0B13E /* UIView+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CZAddition.h"; sourceTree = "<group>"; };
+		CEFB44BC1E83791D00A0B13E /* UIView+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CZAddition.m"; sourceTree = "<group>"; };
+		CEFB44BD1E83791D00A0B13E /* UIViewController+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CZAddition.h"; sourceTree = "<group>"; };
+		CEFB44BE1E83791D00A0B13E /* UIViewController+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CZAddition.m"; sourceTree = "<group>"; };
+		CEFB44CC1E83798500A0B13E /* NSBundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBundle+Extensions.swift"; sourceTree = "<group>"; };
+		CEFB44CD1E83798500A0B13E /* UIBarButton+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButton+Extensions.swift"; sourceTree = "<group>"; };
+		CEFB44D01E83823600A0B13E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CEFB44D21E83826700A0B13E /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		CEFB44D41E83827600A0B13E /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		CEFB44D61E83828E00A0B13E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEFB44831E83757900A0B13E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEFB447D1E83757900A0B13E = {
+			isa = PBXGroup;
+			children = (
+				CEFB44881E83757A00A0B13E /* xianlangtabbar */,
+				CEFB44871E83757900A0B13E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEFB44871E83757900A0B13E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEFB44861E83757900A0B13E /* xianlangtabbar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEFB44881E83757A00A0B13E /* xianlangtabbar */ = {
+			isa = PBXGroup;
+			children = (
+				CEFB44891E83757A00A0B13E /* AppDelegate.swift */,
+				CEFB449B1E8375F500A0B13E /* MainTabViewController.swift */,
+				CEFB44D61E83828E00A0B13E /* ProfileViewController.swift */,
+				CEFB44D41E83827600A0B13E /* DiscoverViewController.swift */,
+				CEFB44D21E83826700A0B13E /* MessageViewController.swift */,
+				CEFB449F1E83786E00A0B13E /* BaseViewController.swift */,
+				CEFB449D1E83777A00A0B13E /* NavViewController.swift */,
+				CEFB44D01E83823600A0B13E /* HomeViewController.swift */,
+				CEFB44CB1E83798500A0B13E /* Extensions */,
+				CEFB44A51E83791D00A0B13E /* Additions */,
+				CEFB44901E83757A00A0B13E /* Assets.xcassets */,
+				CEFB44921E83757A00A0B13E /* LaunchScreen.storyboard */,
+				CEFB44951E83757A00A0B13E /* Info.plist */,
+				CEFB44A11E8378F400A0B13E /* xianlangtabbar-Bridging-Header.h */,
+			);
+			path = xianlangtabbar;
+			sourceTree = "<group>";
+		};
+		CEFB44A51E83791D00A0B13E /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				CEFB44A61E83791D00A0B13E /* CZAdditions.h */,
+				CEFB44A71E83791D00A0B13E /* NSArray+Log.h */,
+				CEFB44A81E83791D00A0B13E /* NSArray+Log.m */,
+				CEFB44A91E83791D00A0B13E /* NSAttributedString+CZAdditon.h */,
+				CEFB44AA1E83791D00A0B13E /* NSAttributedString+CZAdditon.m */,
+				CEFB44AB1E83791D00A0B13E /* NSObject+CZRuntime.h */,
+				CEFB44AC1E83791D00A0B13E /* NSObject+CZRuntime.m */,
+				CEFB44AD1E83791D00A0B13E /* NSString+CZBase64.h */,
+				CEFB44AE1E83791D00A0B13E /* NSString+CZBase64.m */,
+				CEFB44AF1E83791D00A0B13E /* NSString+CZHash.h */,
+				CEFB44B01E83791D00A0B13E /* NSString+CZHash.m */,
+				CEFB44B11E83791D00A0B13E /* NSString+CZPath.h */,
+				CEFB44B21E83791D00A0B13E /* NSString+CZPath.m */,
+				CEFB44B31E83791D00A0B13E /* UIButton+CZAddition.h */,
+				CEFB44B41E83791D00A0B13E /* UIButton+CZAddition.m */,
+				CEFB44B51E83791D00A0B13E /* UIColor+CZAddition.h */,
+				CEFB44B61E83791D00A0B13E /* UIColor+CZAddition.m */,
+				CEFB44B71E83791D00A0B13E /* UILabel+CZAddition.h */,
+				CEFB44B81E83791D00A0B13E /* UILabel+CZAddition.m */,
+				CEFB44B91E83791D00A0B13E /* UIScreen+CZAddition.h */,
+				CEFB44BA1E83791D00A0B13E /* UIScreen+CZAddition.m */,
+				CEFB44BB1E83791D00A0B13E /* UIView+CZAddition.h */,
+				CEFB44BC1E83791D00A0B13E /* UIView+CZAddition.m */,
+				CEFB44BD1E83791D00A0B13E /* UIViewController+CZAddition.h */,
+				CEFB44BE1E83791D00A0B13E /* UIViewController+CZAddition.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		CEFB44CB1E83798500A0B13E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CEFB44CC1E83798500A0B13E /* NSBundle+Extensions.swift */,
+				CEFB44CD1E83798500A0B13E /* UIBarButton+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEFB44851E83757900A0B13E /* xianlangtabbar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEFB44981E83757A00A0B13E /* Build configuration list for PBXNativeTarget "xianlangtabbar" */;
+			buildPhases = (
+				CEFB44821E83757900A0B13E /* Sources */,
+				CEFB44831E83757900A0B13E /* Frameworks */,
+				CEFB44841E83757900A0B13E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xianlangtabbar;
+			productName = xianlangtabbar;
+			productReference = CEFB44861E83757900A0B13E /* xianlangtabbar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEFB447E1E83757900A0B13E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = user;
+				TargetAttributes = {
+					CEFB44851E83757900A0B13E = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = CEFB44811E83757900A0B13E /* Build configuration list for PBXProject "xianlangtabbar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEFB447D1E83757900A0B13E;
+			productRefGroup = CEFB44871E83757900A0B13E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEFB44851E83757900A0B13E /* xianlangtabbar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEFB44841E83757900A0B13E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFB44941E83757A00A0B13E /* LaunchScreen.storyboard in Resources */,
+				CEFB44911E83757A00A0B13E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEFB44821E83757900A0B13E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFB44BF1E83791D00A0B13E /* NSArray+Log.m in Sources */,
+				CEFB44C41E83791D00A0B13E /* NSString+CZPath.m in Sources */,
+				CEFB44D11E83823600A0B13E /* HomeViewController.swift in Sources */,
+				CEFB44C31E83791D00A0B13E /* NSString+CZHash.m in Sources */,
+				CEFB448A1E83757A00A0B13E /* AppDelegate.swift in Sources */,
+				CEFB44C81E83791D00A0B13E /* UIScreen+CZAddition.m in Sources */,
+				CEFB44D71E83828E00A0B13E /* ProfileViewController.swift in Sources */,
+				CEFB44C71E83791D00A0B13E /* UILabel+CZAddition.m in Sources */,
+				CEFB44C51E83791D00A0B13E /* UIButton+CZAddition.m in Sources */,
+				CEFB44CF1E83798500A0B13E /* UIBarButton+Extensions.swift in Sources */,
+				CEFB44D51E83827600A0B13E /* DiscoverViewController.swift in Sources */,
+				CEFB44C11E83791D00A0B13E /* NSObject+CZRuntime.m in Sources */,
+				CEFB44C21E83791D00A0B13E /* NSString+CZBase64.m in Sources */,
+				CEFB44CA1E83791D00A0B13E /* UIViewController+CZAddition.m in Sources */,
+				CEFB44C91E83791D00A0B13E /* UIView+CZAddition.m in Sources */,
+				CEFB44C01E83791D00A0B13E /* NSAttributedString+CZAdditon.m in Sources */,
+				CEFB44D31E83826700A0B13E /* MessageViewController.swift in Sources */,
+				CEFB44C61E83791D00A0B13E /* UIColor+CZAddition.m in Sources */,
+				CEFB44A01E83786E00A0B13E /* BaseViewController.swift in Sources */,
+				CEFB449E1E83777A00A0B13E /* NavViewController.swift in Sources */,
+				CEFB44CE1E83798500A0B13E /* NSBundle+Extensions.swift in Sources */,
+				CEFB449C1E8375F500A0B13E /* MainTabViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CEFB44921E83757A00A0B13E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEFB44931E83757A00A0B13E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEFB44961E83757A00A0B13E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEFB44971E83757A00A0B13E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEFB44991E83757A00A0B13E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = xianlangtabbar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wafa.xianlangtabbar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "xianlangtabbar/xianlangtabbar-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CEFB449A1E83757A00A0B13E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = xianlangtabbar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wafa.xianlangtabbar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "xianlangtabbar/xianlangtabbar-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEFB44811E83757900A0B13E /* Build configuration list for PBXProject "xianlangtabbar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEFB44961E83757A00A0B13E /* Debug */,
+				CEFB44971E83757A00A0B13E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEFB44981E83757A00A0B13E /* Build configuration list for PBXNativeTarget "xianlangtabbar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEFB44991E83757A00A0B13E /* Debug */,
+				CEFB449A1E83757A00A0B13E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEFB447E1E83757900A0B13E /* Project object */;
+}
