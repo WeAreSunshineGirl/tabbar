@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/user/Desktop/tabbar/xianlangtabbar/xianlangtabbar/Additions/NSString+CZPath.m \
-  /Users/user/Desktop/tabbar/xianlangtabbar/xianlangtabbar/Additions/NSString+CZPath.h
+  /Users/user/tabbar/xianlangtabbar/xianlangtabbar/Additions/NSString+CZPath.m \
+  /Users/user/tabbar/xianlangtabbar/xianlangtabbar/Additions/NSString+CZPath.h
