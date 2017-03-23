@@ -31,6 +31,7 @@
 		CEFB44D31E83826700A0B13E /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFB44D21E83826700A0B13E /* MessageViewController.swift */; };
 		CEFB44D51E83827600A0B13E /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFB44D41E83827600A0B13E /* DiscoverViewController.swift */; };
 		CEFB44D71E83828E00A0B13E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFB44D61E83828E00A0B13E /* ProfileViewController.swift */; };
+		CEFB44EB1E83B43700A0B13E /* UIImage+SunImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFB44EA1E83B43700A0B13E /* UIImage+SunImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,8 @@
 		CEFB44D21E83826700A0B13E /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		CEFB44D41E83827600A0B13E /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		CEFB44D61E83828E00A0B13E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CEFB44E91E83B42E00A0B13E /* UIImage+SunImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SunImage.h"; sourceTree = "<group>"; };
+		CEFB44EA1E83B43700A0B13E /* UIImage+SunImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SunImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 				CEFB449F1E83786E00A0B13E /* BaseViewController.swift */,
 				CEFB449D1E83777A00A0B13E /* NavViewController.swift */,
 				CEFB44D01E83823600A0B13E /* HomeViewController.swift */,
+				CEFB44E91E83B42E00A0B13E /* UIImage+SunImage.h */,
+				CEFB44EA1E83B43700A0B13E /* UIImage+SunImage.m */,
 				CEFB44CB1E83798500A0B13E /* Extensions */,
 				CEFB44A51E83791D00A0B13E /* Additions */,
 				CEFB44901E83757A00A0B13E /* Assets.xcassets */,
@@ -248,6 +253,7 @@
 				CEFB44D51E83827600A0B13E /* DiscoverViewController.swift in Sources */,
 				CEFB44C11E83791D00A0B13E /* NSObject+CZRuntime.m in Sources */,
 				CEFB44C21E83791D00A0B13E /* NSString+CZBase64.m in Sources */,
+				CEFB44EB1E83B43700A0B13E /* UIImage+SunImage.m in Sources */,
 				CEFB44CA1E83791D00A0B13E /* UIViewController+CZAddition.m in Sources */,
 				CEFB44C91E83791D00A0B13E /* UIView+CZAddition.m in Sources */,
 				CEFB44C01E83791D00A0B13E /* NSAttributedString+CZAdditon.m in Sources */,
@@ -407,6 +413,7 @@
 				CEFB449A1E83757A00A0B13E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -14,6 +14,10 @@ class HomeViewController: BaseViewController {
         super.viewDidLoad()
 
         view.backgroundColor = UIColor.greenColor()
+        
+//        let iv = UIImageView()
+        
+        
         // Do any additional setup after loading the view.
     }
 

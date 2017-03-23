@@ -6,11 +6,11 @@ provides-nominal:
 provides-member:
 - ["C14xianlangtabbar21ProfileViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "viewDidLoad"
 depends-top-level:
-- "BaseViewController"
 - "ProfileViewController"
+- "BaseViewController"
 - !private "UIColor"
 depends-member:
 - !private ["Ps9AnyObject", "UIColor"]
@@ -189,9 +189,9 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Users/user/Desktop/xianlangtabbar/xianlangtabbar/xianlangtabbar-Bridging-Header.h"
-- "/Users/user/Desktop/xianlangtabbar/xianlangtabbar/Additions/CZAdditions.h"
-- "/Users/user/Desktop/xianlangtabbar/xianlangtabbar/Additions/UILabel+CZAddition.h"
+- "/Users/user/Desktop/tabbar/xianlangtabbar/xianlangtabbar/xianlangtabbar-Bridging-Header.h"
+- "/Users/user/Desktop/tabbar/xianlangtabbar/xianlangtabbar/Additions/CZAdditions.h"
+- "/Users/user/Desktop/tabbar/xianlangtabbar/xianlangtabbar/Additions/UILabel+CZAddition.h"
 - "/Applications/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
@@ -199,14 +199,14 @@ depends-external:
 - "/Applications/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Users/user/Desktop/xianlangtabbar/xianlangtabbar/Additions/UIButton+CZAddition.h"
-- "/Users/user/Desktop/xianlangtabbar/xianlangtabbar/Additions/UIColor+CZAddition.h"
-- "/Users/user/Desktop/xianlangtabbar/xianlangtabbar/Additions/UIView+CZAddition.h"
-- "/Users/user/Desktop/xianlangtabbar/xianlangtabbar/Additions/UIScreen+CZAddition.h"
-- "/Users/user/Desktop/xianlangtabbar/xianlangtabbar/Additions/UIViewController+CZAddition.h"
-- "/Users/user/Desktop/xianlangtabbar/xianlangtabbar/Additions/NSObject+CZRuntime.h"
-- "/Users/user/Desktop/xianlangtabbar/xianlangtabbar/Additions/NSAttributedString+CZAdditon.h"
-- "/Users/user/Desktop/xianlangtabbar/xianlangtabbar/Additions/NSString+CZHash.h"
-- "/Users/user/Desktop/xianlangtabbar/xianlangtabbar/Additions/NSString+CZBase64.h"
-- "/Users/user/Desktop/xianlangtabbar/xianlangtabbar/Additions/NSString+CZPath.h"
+- "/Users/user/Desktop/tabbar/xianlangtabbar/xianlangtabbar/Additions/UIButton+CZAddition.h"
+- "/Users/user/Desktop/tabbar/xianlangtabbar/xianlangtabbar/Additions/UIColor+CZAddition.h"
+- "/Users/user/Desktop/tabbar/xianlangtabbar/xianlangtabbar/Additions/UIView+CZAddition.h"
+- "/Users/user/Desktop/tabbar/xianlangtabbar/xianlangtabbar/Additions/UIScreen+CZAddition.h"
+- "/Users/user/Desktop/tabbar/xianlangtabbar/xianlangtabbar/Additions/UIViewController+CZAddition.h"
+- "/Users/user/Desktop/tabbar/xianlangtabbar/xianlangtabbar/Additions/NSObject+CZRuntime.h"
+- "/Users/user/Desktop/tabbar/xianlangtabbar/xianlangtabbar/Additions/NSAttributedString+CZAdditon.h"
+- "/Users/user/Desktop/tabbar/xianlangtabbar/xianlangtabbar/Additions/NSString+CZHash.h"
+- "/Users/user/Desktop/tabbar/xianlangtabbar/xianlangtabbar/Additions/NSString+CZBase64.h"
+- "/Users/user/Desktop/tabbar/xianlangtabbar/xianlangtabbar/Additions/NSString+CZPath.h"
 interface-hash: "c63a8a6314b20cd90e5e177551444ac7"

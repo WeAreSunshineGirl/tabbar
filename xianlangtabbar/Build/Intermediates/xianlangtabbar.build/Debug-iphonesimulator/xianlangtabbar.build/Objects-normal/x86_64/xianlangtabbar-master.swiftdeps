@@ -1,14 +1,14 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
-options: "b0938e5e915454c5ddf380a13a72484e"
-build_time: [543557582, 485163000]
+options: "47221dbd947e54aae68b8a47e9b3f8ae"
+build_time: [543570309, 626673000]
 inputs:
-  "/Users/user/Desktop/xianlangtabbar/xianlangtabbar/HomeViewController.swift": [543557582, 0]
-  "/Users/user/Desktop/xianlangtabbar/xianlangtabbar/AppDelegate.swift": [543554452, 0]
-  "/Users/user/Desktop/xianlangtabbar/xianlangtabbar/ProfileViewController.swift": [543557582, 0]
-  "/Users/user/Desktop/xianlangtabbar/xianlangtabbar/Extensions/UIBarButton+Extensions.swift": [535183675, 0]
-  "/Users/user/Desktop/xianlangtabbar/xianlangtabbar/DiscoverViewController.swift": [543557582, 0]
-  "/Users/user/Desktop/xianlangtabbar/xianlangtabbar/MessageViewController.swift": [543557582, 0]
-  "/Users/user/Desktop/xianlangtabbar/xianlangtabbar/BaseViewController.swift": [543554925, 0]
-  "/Users/user/Desktop/xianlangtabbar/xianlangtabbar/NavViewController.swift": [543554682, 0]
-  "/Users/user/Desktop/xianlangtabbar/xianlangtabbar/Extensions/NSBundle+Extensions.swift": [533888873, 0]
-  "/Users/user/Desktop/xianlangtabbar/xianlangtabbar/MainTabViewController.swift": [543557430, 0]
+  "/Users/user/Desktop/tabbar/xianlangtabbar/xianlangtabbar/HomeViewController.swift": [543570283, 0]
+  "/Users/user/Desktop/tabbar/xianlangtabbar/xianlangtabbar/AppDelegate.swift": [543570178, 0]
+  "/Users/user/Desktop/tabbar/xianlangtabbar/xianlangtabbar/ProfileViewController.swift": [543570178, 0]
+  "/Users/user/Desktop/tabbar/xianlangtabbar/xianlangtabbar/Extensions/UIBarButton+Extensions.swift": [543570178, 0]
+  "/Users/user/Desktop/tabbar/xianlangtabbar/xianlangtabbar/DiscoverViewController.swift": [543570178, 0]
+  "/Users/user/Desktop/tabbar/xianlangtabbar/xianlangtabbar/MessageViewController.swift": [543570178, 0]
+  "/Users/user/Desktop/tabbar/xianlangtabbar/xianlangtabbar/BaseViewController.swift": [543570178, 0]
+  "/Users/user/Desktop/tabbar/xianlangtabbar/xianlangtabbar/NavViewController.swift": [543570178, 0]
+  "/Users/user/Desktop/tabbar/xianlangtabbar/xianlangtabbar/Extensions/NSBundle+Extensions.swift": [543570178, 0]
+  "/Users/user/Desktop/tabbar/xianlangtabbar/xianlangtabbar/MainTabViewController.swift": [543570178, 0]

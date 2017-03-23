@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/user/Desktop/xianlangtabbar/xianlangtabbar/Additions/NSString+CZHash.m \
-  /Users/user/Desktop/xianlangtabbar/xianlangtabbar/Additions/NSString+CZHash.h
+  /Users/user/Desktop/tabbar/xianlangtabbar/xianlangtabbar/Additions/NSString+CZHash.m \
+  /Users/user/Desktop/tabbar/xianlangtabbar/xianlangtabbar/Additions/NSString+CZHash.h

@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/user/Desktop/xianlangtabbar/xianlangtabbar/Additions/UIView+CZAddition.m \
-  /Users/user/Desktop/xianlangtabbar/xianlangtabbar/Additions/UIView+CZAddition.h
+  /Users/user/Desktop/tabbar/xianlangtabbar/xianlangtabbar/Additions/UIView+CZAddition.m \
+  /Users/user/Desktop/tabbar/xianlangtabbar/xianlangtabbar/Additions/UIView+CZAddition.h
