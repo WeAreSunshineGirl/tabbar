@@ -9,9 +9,9 @@ provides-dynamic-lookup:
 - "didReceiveMemoryWarning"
 - "viewDidLoad"
 depends-top-level:
+- !private "UIColor"
 - "ProfileViewController"
 - "BaseViewController"
-- !private "UIColor"
 depends-member:
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "backgroundColor"]

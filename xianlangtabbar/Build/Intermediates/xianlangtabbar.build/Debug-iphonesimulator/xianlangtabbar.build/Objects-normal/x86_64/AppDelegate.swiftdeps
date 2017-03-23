@@ -6,25 +6,25 @@ provides-nominal:
 provides-member:
 - ["C14xianlangtabbar11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationWillEnterForeground"
 - "application"
 - "applicationWillTerminate"
-- "applicationDidEnterBackground"
-- "applicationWillResignActive"
-- "window"
 - "applicationDidBecomeActive"
+- "window"
+- "applicationWillResignActive"
+- "applicationWillEnterForeground"
+- "applicationDidEnterBackground"
 depends-top-level:
-- "AppDelegate"
-- "UIApplication"
-- !private "BooleanLiteralType"
 - "UIWindow"
-- "Bool"
-- "NSObject"
-- !private "UIColor"
-- "UIApplicationDelegate"
+- "UIApplication"
+- "AppDelegate"
 - !private "MainTabViewController"
-- "UIResponder"
+- "Bool"
 - "AnyObject"
+- !private "UIColor"
+- !private "BooleanLiteralType"
+- "NSObject"
+- "UIResponder"
+- "UIApplicationDelegate"
 depends-member:
 - !private ["Ps9AnyObject", "MainTabViewController"]
 - !private ["Ps9AnyObject", "UIColor"]

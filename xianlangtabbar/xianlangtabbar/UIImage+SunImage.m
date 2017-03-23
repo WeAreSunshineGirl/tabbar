@@ -9,6 +9,10 @@
 #import "UIImage+SunImage.h"
 
 @implementation UIImage (SunImage)
+
+/**
+ *  截图当前对象image对象rect区域内的图像
+ */
 +(UIImage *)subimageInRect:(UIImage *)image rect:(CGRect)rect{
     CGImageRef newImageRef = CGImageCreateWithImageInRect(image.CGImage, rect);
     
