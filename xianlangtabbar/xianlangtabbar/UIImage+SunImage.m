@@ -42,7 +42,7 @@
     
     UIColor *color = [UIColor colorWithPatternImage:image];
     
-    UIImage *masterImage = [UIImage imageWithColor:color];
+    UIImage *masterImage = [UIImage imageWithColor:color];//这个有点问题
     
     CGRect rect = (CGRect){CGPointZero, targetSize};
     
