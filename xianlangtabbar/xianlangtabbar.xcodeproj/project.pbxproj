@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEEC75091E85115E00C8374E /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC75081E85115E00C8374E /* UIImage+Color.m */; };
 		CEFB448A1E83757A00A0B13E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFB44891E83757A00A0B13E /* AppDelegate.swift */; };
 		CEFB44911E83757A00A0B13E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFB44901E83757A00A0B13E /* Assets.xcassets */; };
 		CEFB44941E83757A00A0B13E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFB44921E83757A00A0B13E /* LaunchScreen.storyboard */; };
@@ -35,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CEEC75071E85115E00C8374E /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		CEEC75081E85115E00C8374E /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
 		CEFB44861E83757900A0B13E /* xianlangtabbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xianlangtabbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFB44891E83757A00A0B13E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEFB44901E83757A00A0B13E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -119,6 +122,8 @@
 				CEFB44D01E83823600A0B13E /* HomeViewController.swift */,
 				CEFB44E91E83B42E00A0B13E /* UIImage+SunImage.h */,
 				CEFB44EA1E83B43700A0B13E /* UIImage+SunImage.m */,
+				CEEC75071E85115E00C8374E /* UIImage+Color.h */,
+				CEEC75081E85115E00C8374E /* UIImage+Color.m */,
 				CEFB44CB1E83798500A0B13E /* Extensions */,
 				CEFB44A51E83791D00A0B13E /* Additions */,
 				CEFB44901E83757A00A0B13E /* Assets.xcassets */,
@@ -261,6 +266,7 @@
 				CEFB44C61E83791D00A0B13E /* UIColor+CZAddition.m in Sources */,
 				CEFB44A01E83786E00A0B13E /* BaseViewController.swift in Sources */,
 				CEFB449E1E83777A00A0B13E /* NavViewController.swift in Sources */,
+				CEEC75091E85115E00C8374E /* UIImage+Color.m in Sources */,
 				CEFB44CE1E83798500A0B13E /* NSBundle+Extensions.swift in Sources */,
 				CEFB449C1E8375F500A0B13E /* MainTabViewController.swift in Sources */,
 			);

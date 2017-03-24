@@ -7,7 +7,7 @@
 //
 
 #import "UIImage+SunImage.h"
-
+#import "UIImage+Color.h"
 @implementation UIImage (SunImage)
 
 /**
