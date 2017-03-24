@@ -7,13 +7,7 @@
 //
 
 #import "UIImage+SunImage.h"
-typedef NS_ENUM(NSUInteger,DiscardImageType){
-    DiscardImageUnknown = 0,
-    DiscardImageTopSize = 1,
-    DiscardImageRightSize = 2,
-    DiscardImageBottomSize = 3,
-    DiscardImageLeftSize = 4,
-};
+
 @implementation UIImage (SunImage)
 
 /**
@@ -44,6 +38,181 @@ typedef NS_ENUM(NSUInteger,DiscardImageType){
     
     return resImage;
 }
++ (UIImage *)scaleImageNotKeepingRatio2:(UIImage *)image targetSize2:(CGSize)targetSize {
+    
+    UIColor *color = [UIColor colorWithPatternImage:image];
+    
+    UIImage *masterImage = [UIImage imageWithColor:color];
+    
+    CGRect rect = (CGRect){CGPointZero, targetSize};
+    
+    UIGraphicsBeginImageContext(rect.size);
+    
+    [masterImage drawInRect:rect];
+    
+    [image drawInRect:CGRectMake((targetSize.width-image.size.width)/2.0,
+                                 (targetSize.height-image.size.height)/2.0,
+                                 image.size.width,
+                                 image.size.height)];
+    
+    UIImage *resImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return resImage;
+}
+
+- (CGAffineTransform)transformForOrientation:(UIImageOrientation)orientation size:(CGSize)newSize {
+    
+    CGAffineTransform transform = CGAffineTransformIdentity;
+    
+    switch (orientation) {
+        case UIImageOrientationDown:
+        case UIImageOrientationDownMirrored:
+            transform = CGAffineTransformTranslate(transform, newSize.width, newSize.height);
+            transform = CGAffineTransformRotate(transform, M_PI);
+            break;
+            
+        case UIImageOrientationRight:
+        case UIImageOrientationRightMirrored:
+            transform = CGAffineTransformTranslate(transform, newSize.width, 0);
+            transform = CGAffineTransformRotate(transform, M_PI_2);
+            break;
+            
+        case UIImageOrientationLeft:
+        case UIImageOrientationLeftMirrored:
+            transform = CGAffineTransformTranslate(transform, 0, newSize.height);
+            transform = CGAffineTransformRotate(transform, -M_PI_2);
+            break;
+        default:
+            break;
+    }
+    
+    switch (orientation) {
+        case UIImageOrientationUpMirrored:
+        case UIImageOrientationDownMirrored:
+            transform = CGAffineTransformTranslate(transform, newSize.width, 0);
+            transform = CGAffineTransformScale(transform, -1, 1);
+            break;
+            
+        case UIImageOrientationLeftMirrored:
+        case UIImageOrientationRightMirrored:
+            transform = CGAffineTransformTranslate(transform, newSize.height, 0);
+            transform = CGAffineTransformScale(transform, -1, 1);
+            break;
+        default:
+            break;
+    }
+    
+    return transform;
+}
+
+- (UIImage *)scaledImageToSize:(CGSize)newSize scalingMode:(ScalingMode)scalingMode interpolationQuality:(CGInterpolationQuality)quality scale:(CGFloat)scale {
+    BOOL transpose;
+    switch (self.imageOrientation) {
+        case UIImageOrientationLeft:
+        case UIImageOrientationRight:
+        case UIImageOrientationLeftMirrored:
+        case UIImageOrientationRightMirrored:
+            transpose = YES;
+            break;
+        default:
+            transpose = NO;
+            break;
+    }
+    int mirrorV = 1;
+    int mirrorH = 1;
+    switch (self.imageOrientation) {
+        case UIImageOrientationUp:
+            mirrorH = 1;
+            mirrorV = -1;
+            break;
+        case UIImageOrientationRight:
+            mirrorH = 1;
+            mirrorV = 1;
+            break;
+        case UIImageOrientationDown:
+            mirrorH = -1;
+            mirrorV = 1;
+            break;
+        case UIImageOrientationLeft:
+            mirrorH = -1;
+            mirrorV = -1;
+            break;
+        case UIImageOrientationDownMirrored:
+            mirrorH = 1;
+            mirrorV = 1;
+            break;
+        case UIImageOrientationUpMirrored:
+            mirrorH = -1;
+            mirrorV = -1;
+            break;
+        case UIImageOrientationRightMirrored:
+            mirrorH = -1;
+            mirrorV = 1;
+            break;
+        case UIImageOrientationLeftMirrored:
+            mirrorH = 1;
+            mirrorV = -1;
+            break;
+        default:
+            break;
+    }
+    
+    CGSize size = CGSizeZero;
+    CGRect rect = CGRectZero;
+    
+    if (scalingMode == ScalingModeFill) {
+        size = newSize;
+    }
+    else if (scalingMode == ScalingModeAspectFit) {
+        CGSize oldSize = self.size;
+        float aspectOld = oldSize.width / oldSize.height;
+        float aspectNew = newSize.width / newSize.height;
+        float scale = aspectOld > aspectNew ? newSize.width / oldSize.width : newSize.height / oldSize.height;
+        size = CGSizeMake(oldSize.width * scale, oldSize.height * scale);
+        newSize = size;
+    }
+    else if (scalingMode == ScalingModeAspectFill) {
+        CGSize oldSize = self.size;
+        float aspectOld = oldSize.width / oldSize.height;
+        float aspectNew = newSize.width / newSize.height;
+        float scale = aspectOld < aspectNew ? newSize.width / oldSize.width : newSize.height / oldSize.height;
+        size = CGSizeMake(oldSize.width * scale, oldSize.height * scale);
+    }
+    else if (scalingMode == ScalingModeAspectExtendsFit) {
+        CGSize oldSize = self.size;
+        float aspectOld = oldSize.width / oldSize.height;
+        float aspectNew = newSize.width / newSize.height;
+        float scale = aspectOld > aspectNew ? newSize.width / oldSize.width : newSize.height / oldSize.height;
+        size = CGSizeMake(oldSize.width * scale, oldSize.height * scale);
+    }
+    else if (scalingMode == ScalingModeAspectExtendsFill) {
+        CGSize oldSize = self.size;
+        float aspectOld = oldSize.width / oldSize.height;
+        float aspectNew = newSize.width / newSize.height;
+        float scale = aspectOld < aspectNew ? newSize.width / oldSize.width : newSize.height / oldSize.height;
+        size = CGSizeMake(oldSize.width * scale, oldSize.height * scale);
+        newSize = size;
+    }
+    rect = transpose ?
+    CGRectMake((newSize.height - size.height) / 2 * mirrorH, (newSize.width - size.width) / 2 * mirrorV, size.height, size.width) :
+    CGRectMake((newSize.width - size.width) / 2 * mirrorH, (newSize.height - size.height) / 2 * mirrorV, size.width, size.height);
+    
+    UIGraphicsBeginImageContextWithOptions(newSize, NO, scale);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextClearRect(context, CGRectMake(0, 0, newSize.width, newSize.height));
+    
+    CGContextSetInterpolationQuality(context, quality);
+    CGContextConcatCTM(context, [self transformForOrientation:self.imageOrientation size:size]);
+    CGContextTranslateCTM(context, 0, rect.size.height);
+    CGContextScaleCTM(context, 1, -1);
+    CGContextDrawImage(context, rect, [self CGImage]);
+    UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
 /**
  *  压缩图片至指定像素
  */
@@ -163,26 +332,26 @@ typedef NS_ENUM(NSUInteger,DiscardImageType){
     if (widthFactor < 1 && heightFactor < 1) {
         if (widthFactor > heightFactor) {
             //右部分空白
-            discardType = DiscardImageRightSize;
+            discardType = DiscardImageRightSide;
             scaleFactor = heightFactor;
         }//scale to fit height
         else{
             //下部分空白
-            discardType = DiscardImageBottomSize;
+            discardType = DiscardImageBottomSide;
             scaleFactor = widthFactor;//scale to fit width
         }
     }
     //第二种 宽度不够比例 高度缩小一点点
     else if(widthFactor > 1 && heightFactor < 1){
         //右边空白
-        discardType = DiscardImageRightSize;
+        discardType = DiscardImageRightSide;
         //采用高度拉伸比例
         scaleFactor = imageWidth / targetWidth ;// scale to fit width
     }
     //第三种 高度不够比例 宽度缩小一点点
     else if (heightFactor > 1 && widthFactor < 1){
         //下边空白
-        discardType = DiscardImageBottomSize;
+        discardType = DiscardImageBottomSide;
         
         //采用高度拉伸比例
         scaleFactor = imageHeight / targetHeight;
@@ -191,12 +360,12 @@ typedef NS_ENUM(NSUInteger,DiscardImageType){
     else{
         if (widthFactor > heightFactor) {
             //右部分空白
-            discardType = DiscardImageRightSize;
+            discardType = DiscardImageRightSide;
             
             scaleFactor = heightFactor;//scale to fit height
         }else{
             //下部分空白
-            discardType = DiscardImageBottomSize;
+            discardType = DiscardImageBottomSide;
             
             scaleFactor = widthFactor;//scale to fit wdth
         }
@@ -205,23 +374,23 @@ typedef NS_ENUM(NSUInteger,DiscardImageType){
     scaleHeight = imageHeight * scaleFactor;
     
     switch (discardType) {
-        case DiscardImageTopSize:{
+        case DiscardImageTopSide:{
             break;
         }
-        case DiscardImageRightSize:{
+        case DiscardImageRightSide:{
             //右部分空白
             targetSize.width = scaleWidth;
             
             break;
         }
-        case DiscardImageBottomSize:{
+        case DiscardImageBottomSide:{
             
             //下部分空白
             targetSize.height = scaleHeight;
             
             break;
         }
-        case DiscardImageLeftSize:{
+        case DiscardImageLeftSide:{
             break;
         }
         case DiscardImageUnknown:{
